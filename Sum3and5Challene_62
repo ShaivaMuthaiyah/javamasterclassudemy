@@ -1,0 +1,35 @@
+
+package udemyjavacourse;
+import java.util.*;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int counter = 0;			
+		int i = 1;
+		int totalsum = 0;
+	    while (counter < 5 && i <= 1000) {
+	        if (isDivisible(i)) {
+	        	totalsum = totalsum + i;
+	        	counter++;	            
+	        }
+
+	        i++;
+	    }
+	    System.out.println("The sum of the first 5 numbers divisible by both 3 and 5 is "+totalsum);
+	
+}	
+	
+	public static boolean isDivisible(int number) {
+		
+		if (number % 3 == 0 && number % 5 == 0) {
+			
+			System.out.println("The numnber "+number+" is both divisible by 3 and 5");
+			return true;
+		}else {
+			return false;
+			}				
+	}
+	
+}
