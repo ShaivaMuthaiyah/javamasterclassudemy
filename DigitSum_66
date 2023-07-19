@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package udemyjavacourse;
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		sumDigits(2345);
+	}
+
+	public static int sumDigits(int number) {
+
+		int digitSum = 0;
+		int remaining = number;
+
+		while (remaining > 0) {
+
+			int rightDigit = remaining % 10;
+
+			if (rightDigit == 0)
+
+				remaining = remaining / 10;
+
+			if (rightDigit != 0)
+
+				remaining = remaining - rightDigit;
+
+			digitSum = digitSum + rightDigit;
+
+		}
+
+		System.out.println(digitSum);
+
+		return remaining;
+
+	}
+
+}
