@@ -33,7 +33,7 @@ public class Main {
 
 		}
 
-		System.out.println(digitSum);
+		System.out.println("The sum of the digits of "+number+" is "+digitSum);
 
 		return remaining;
 
